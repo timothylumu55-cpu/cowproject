@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About us</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+    }
+    li{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 30px;
+        color: yellow;
+    }
+    a{
+    text-align:top;
+    font-size: 100px;
+    color: aqua;
+    
+    
+    }
+    li{
+        font-size: 30px;
+        font-style: italic;
+        color:  red;
+    }
+    
+</style>
+<body>
+    <section class="header">
+<nav>
+
+<div class="nav-links" id="nav-links">
+
+<i class="fa fa-times" id="hideMenu" onclick="hideMenu()"></i>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about us.html">ABOUTUS</a></li>
+<li><a href="products offered.html">PRODUCTS OFFERED</a></li>
+<li><a href="contact us.html">CONTACTUS</a></li>
+
+</ul>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</div>
+<button id="showMenu" onclick="showMenu()">ShowMenu</button>
+</nav>
+</section>
+
+    <h4>PRODUCTS OFFERED</h4>
+    <li>.yougurt</li>
+    <li>.milk</li>
+    <li>.ghee</li>
+    <li>.powdered milk</li>
+    <p>and other dairy products</p>
+    <img src="image6.jpg">
+
+    <a>JDP</a>
+     <script>
+        var navLinks = document.querySelector(".nav-links");
+        function showMenu() {
+            navLinks.classList.add("active");
+console.log("showMenu called");
+        }
+        function hideMenu(){
+            navLinks.classList.remove("active");
+        }
+
+    </script>
+</body>

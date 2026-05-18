@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About us</title>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+background-color: skyblue;
+    }
+    .container{
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    
+img{
+    background:red;  /* red */;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background 0.1s ease-in-out,transform 0.1s ease;
+
+}
+img:hover{
+background: #28a745;  /* darker green */
+transform: translateY(-2px); /* lifts up slightly */
+cursor: pointer;
+
+
+}
+    
+</style>
+<body>
+  <section class="header">
+  <nav>
+
+<div class="nav-links" id="nav-links">
+
+<i class="fa fa-times" id="hideMenu" onclick="hideMenu()"></i>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about us.html">ABOUTUS</a></li>
+<li><a href="products offered.html">PRODUCTS OFFERED</a></li>
+<li><a href="contact us.html">CONTACTUS</a></li>
+
+</ul>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</div>
+<button id="showMenu" onclick="showMenu()">ShowMenu</button>
+</nav>
+</section>
+<p>This dairy project was started in 2006 by the late Amos Kananura
+    the projct was then sold to Jason Timothy who later named it JASON DAIRY PROJECT
+</p>
+<P>The project has various farms all over the parts of Uganda
+    eg <li>Bushenyi</li>
+       <li>rukungiri</li>
+       <li>Rwakitura</li>
+       and many others that supply dairy products all over the country
+</P>
+<img src="image 2 .jpg">
+<img src="cows.jpg">
+<img src="image 5 .jpg">
+<img src="image14.jpg.jpg">
+
+
+
+
+<div class="container">
+<div><p>The project has provided quality products to Ugandans for last 15 years</p></div>
+
+</div>
+ <script>
+        var navLinks = document.querySelector(".nav-links");
+        function showMenu() {
+            navLinks.classList.add("active");
+console.log("showMenu called");
+        }
+        function hideMenu(){
+            navLinks.classList.remove("active");
+        }
+
+    </script>
+</body>

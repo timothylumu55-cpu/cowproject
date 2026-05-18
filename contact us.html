@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>contact us</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    .form{
+text-align: center;
+animation: fadeIn 2s ease;
+
+
+    }
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
+
+    h3{
+        text-align: center;
+    }
+    body{
+background-color: wheat;
+
+    }
+    footer{
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: antiquewhite;
+        font-size: 18px;
+    }
+</style>
+<body>
+    <section class="header">
+<nav>
+
+<div class="nav-links" id="nav-links">
+
+<i class="fa fa-times" id="hideMenu" onclick="hideMenu()"></i>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about us.html">ABOUTUS</a></li>
+<li><a href="products offered.html">PRODUCTS OFFERED</a></li>
+<li><a href="contact us.html">CONTACTUS</a></li>
+
+</ul>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</div>
+<button id="showMenu" onclick="showMenu()">ShowMenu</button>
+</nav>
+
+</section>
+
+    <h3>registration form</h3>
+<form class ="form">
+<input type="text" placeholder="enter name" required=""><br><br>
+<input type="text" placeholder="076xxxxx" required=""><br><br>
+<button input type="submit">Send</button>
+
+
+</form>
+<footer><p >&copy; 2026 JASON TIMOTHY.ALL rights reserved. jasontimothydairyproject34@gmail.com</p></footer>
+
+ <script>
+        var navLinks = document.querySelector(".nav-links");
+        function showMenu() {
+            navLinks.classList.add("active");
+console.log("showMenu called");
+        }
+        function hideMenu(){
+            navLinks.classList.remove("active");
+        }
+
+    </script>
+</body>
